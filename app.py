@@ -3,6 +3,7 @@ import random as rd
 
 import requests as rq
 from flask import *
+from flask_cors import cross_origin
 
 import config as c
 
@@ -70,6 +71,7 @@ def init():
 
 
 @app.route("/get", methods=["GET", "POST"])
+@cross_origin(supports_credentials=True)
 def get_sentences():
     _type = rd.choice(request.values.get("type") or types)
     res = rd.choice(sentences[_type])
@@ -81,6 +83,7 @@ def get_sentences():
 
 
 @app.route("/uuid/<uuid>", methods=["GET", "POST"])
+@cross_origin(supports_credentials=True)
 def get_sentence_with_uuid(uuid):
     return json.dumps(sentences[stc_uuid[uuid][0]][stc_uuid[uuid][1]],
                       ensure_ascii=False,

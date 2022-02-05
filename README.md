@@ -14,7 +14,7 @@
 
 1. 确保环境中已经安装 python3.6+ 和 pip3
 2. clone项目到本地： `git clone https://github.com/Danny-Yxzl/yiyan.git`
-3. 使用pip安装依赖： `pip3 install flask requests`
+3. 使用pip安装依赖： `pip3 install flask flask_cors requests`
 4. 根据自己的需要修改配置文件 `config.py`
 5. 使用 `python3 app.py` 或 `uwsgi uwsgi.ini` 命令启动服务
 
