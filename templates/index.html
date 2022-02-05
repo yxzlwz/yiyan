@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>异想之旅亿言</title>
+    <link rel="stylesheet" type="text/css" href="/static/assets/css/vno.css">
+    <link rel="icon" href="/static/favicon.ico">
+    <style>
+        @font-face {
+            font-family: zh96;
+            src: url('/static/assets/fonts/zihun96.ttf');
+        }
+    </style>
+</head>
+
+<body>
+    <span class="mobile btn-mobile-menu">
+        <i class="social iconfont icon-list btn-mobile-menu__icon"></i>
+        <i class="social iconfont icon-angleup btn-mobile-close__icon hidden"></i>
+    </span>
+    <header id="panel" class="panel-cover">
+        <div class="panel-main" style="background-color: #000; opacity: 0.6;">
+            <div class="panel-main__inner panel-inverted">
+                <div class="panel-main__content">
+
+                    <h1 class="panel-cover__title panel-title iUp"
+                        style="font-size: 65px;line-height: 120%; font-family: zh96;">
+                        {{ sentence.content }}
+                    </h1>
+                    <br />
+                    <br />
+                    <br />
+                    <p class="panel-cover__subtitle panel-subtitle iUp" id="motto"
+                        style="font-size: 45px; font-family: zh96;">
+                        {% if sentence.from and sentence.from_who %}
+                        -「{{ sentence.from }} · {{ sentence.from_who }}」
+                        {% else %}
+                        -「{{ sentence.from or sentence.from_who }}」
+                        {% endif %}
+                    </p>
+
+                    <div class="navigation-wrapper iUp">
+                        <div>
+                            <nav class="cover-navigation cover-navigation--primary">
+                                <ul class="navigation">
+                                    <li class="navigation__item">
+                                        <a href="/user/new" class="blog-button">提交句子</a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="/admin/new" class="blog-button" target="_blank">管理员</a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="https://github.com/Danny-Yxzl/yiyan" class="blog-button"
+                                            target="_blank">开源地址</a>
+                                    </li>
+                                    <li class="navigation__item">
+                                        <a href="https://blog.yixiangzhilv.com/article/39" class="blog-button"
+                                            target="_blank">更多</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="remark iUp">
+            <p class="power">
+                鲁ICP备2020034769号 | ©2022 异想之旅 yixiangzhilv.com 版权所有
+            </p>
+        </div>
+    </header>
+
+
+    <script type="text/javascript" src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        const images = 8;
+
+        var iUp = (function () {
+            var t = 0,
+                d = 150,
+                clean = function () {
+                    t = 0;
+                },
+                up = function (e) {
+                    setTimeout(function () {
+                        $(e).addClass("up")
+                    }, t);
+                    t += d;
+                },
+                down = function (e) {
+                    $(e).removeClass("up");
+                },
+                toggle = function (e) {
+                    setTimeout(function () {
+                        $(e).toggleClass("up")
+                    }, t);
+                    t += d;
+                }
+                ;
+            return {
+                clean: clean,
+                up: up,
+                down: down,
+                toggle: toggle
+            }
+        })();
+
+        function getBingImages(imgUrls) {
+            var indexName = "bing-image-index";
+            var index = localStorage.getItem(indexName);
+            var $panel = $('#panel');
+            if (isNaN(index)) { index = Math.round(Math.random() * 100) % 8; }
+            else if (index == images - 1) index = 0;
+            else index++;
+            // console.log(index, imgUrls[index], imgUrls.length)
+            var imgUrl = imgUrls[index];
+            var url = "https://www.bing.com" + imgUrl;
+            $panel.css("background", "url('" + url + "') center center no-repeat #ffffff");
+            $panel.css("background-size", "cover");
+            localStorage.setItem(indexName, index);
+        }
+
+        $(document).ready(function () {
+            setTimeout(
+                function () {
+                    $(".iUp").each(function (i, e) {
+                        iUp.up(e);
+                    });
+
+                    $(".js-avatar")[0].onload = function () {
+                        $(".js-avatar").addClass("show");
+                    }
+
+                    setTimeout('$("#weather").show()', 1000);
+                }, 500);
+        });
+    </script>
+    <script type="text/javascript" src="https://www.yixiangzhilv.com/assets/json/images.json?cb=getBingImages"></script>
+    <script src="https://cdn.yixiangzhilv.com/js/yxzl.js" type="module"></script>
+</body>
+
+</html>
