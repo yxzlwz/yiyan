@@ -73,8 +73,11 @@ def init():
 @app.route("/get", methods=["GET", "POST"])
 @cross_origin(supports_credentials=True)
 def get_sentences():
-    _type = rd.choice(request.values.get("type") or types)
-    res = rd.choice(sentences[_type])
+    if request.values.get("type"):
+        res = rd.choice(sentences[rd.choice(request.values["type"])])
+    else:
+        _res = rd.choice(list(stc_uuid.values()))
+        res = sentences[_res[0]][_res[1]]
     return json.dumps(res,
                       ensure_ascii=False,
                       indent=4,
