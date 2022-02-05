@@ -56,13 +56,13 @@ def init_remote_data(url=c.url, cate=c.cate):
 
 
 def init():
-    global types, types_name, sentences
+    global types, sentences
     if c.data_from == "local":
         init_local_data()
     else:
         init_remote_data()
     types = [i for i in types]
-    for i in types_name.keys():
+    for i in sentences.keys():
         if not sentences.get(i):
             sentences[i] = []
             types.remove(i)
