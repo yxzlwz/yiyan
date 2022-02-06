@@ -97,12 +97,15 @@ def get_sentence_with_uuid(uuid):
 
 @app.route("/")
 def index():
-    return render_template("index.html",
-                           sentence=rd.choice(sentences[rd.choice(types)]))
+    if request.values.get("type"):
+        res = rd.choice(sentences[rd.choice(request.values["type"])])
+    else:
+        _res = rd.choice(list(stc_uuid.values()))
+        res = sentences[_res[0]][_res[1]]
+    return render_template("index.html", sentence=res)
 
 
 init()
-
 
 if __name__ == "__main__":
     app.run(debug=False, port=596, host="0.0.0.0")
