@@ -73,22 +73,17 @@ def init():
 @app.route("/get", methods=["GET", "POST"])
 @cross_origin(supports_credentials=True)
 def get_sentences():
-    if request.values.get("type"):
-        res = rd.choice(sentences[rd.choice(request.values["type"])])
+    res = {}
+    uuid = request.values.get("uuid")
+    if uuid in stc_uuid.keys():
+        res = sentences[stc_uuid[uuid][0]][stc_uuid[uuid][1]]
     else:
-        _res = rd.choice(list(stc_uuid.values()))
-        res = sentences[_res[0]][_res[1]]
+        if request.values.get("type"):
+            res = rd.choice(sentences[rd.choice(request.values["type"])])
+        else:
+            _res = rd.choice(list(stc_uuid.values()))
+            res = sentences[_res[0]][_res[1]]
     return json.dumps(res,
-                      ensure_ascii=False,
-                      indent=4,
-                      sort_keys=True,
-                      separators=(",", ": "))
-
-
-@app.route("/uuid/<uuid>", methods=["GET", "POST"])
-@cross_origin(supports_credentials=True)
-def get_sentence_with_uuid(uuid):
-    return json.dumps(sentences[stc_uuid[uuid][0]][stc_uuid[uuid][1]],
                       ensure_ascii=False,
                       indent=4,
                       sort_keys=True,
@@ -97,11 +92,16 @@ def get_sentence_with_uuid(uuid):
 
 @app.route("/")
 def index():
-    if request.values.get("type"):
-        res = rd.choice(sentences[rd.choice(request.values["type"])])
+    res = {}
+    uuid = request.values.get("uuid")
+    if uuid in stc_uuid.keys():
+        res = sentences[stc_uuid[uuid][0]][stc_uuid[uuid][1]]
     else:
-        _res = rd.choice(list(stc_uuid.values()))
-        res = sentences[_res[0]][_res[1]]
+        if request.values.get("type"):
+            res = rd.choice(sentences[rd.choice(request.values["type"])])
+        else:
+            _res = rd.choice(list(stc_uuid.values()))
+            res = sentences[_res[0]][_res[1]]
     return render_template("index.html", sentence=res)
 
 
