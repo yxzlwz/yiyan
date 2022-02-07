@@ -8,5 +8,25 @@
         "length": 15,
         "type": "i",
         "uuid": "cf5170f4ac9ccc472d429ef62981ec2b"
+    },
+    {
+        "content": "永远相信美好的事情即将发生。",
+        "created_at": "1644125226",
+        "creator": "异想之旅",
+        "from": null,
+        "from_who": "雷军",
+        "length": 14,
+        "type": "i",
+        "uuid": "9c6bdc9e30ad227ba00c186dae60d93d"
+    },
+    {
+        "content": "世界上有太多的未知和不可能，想到即将面对的一切，我心澎湃。 ",
+        "created_at": "1644126243",
+        "creator": "异想之旅",
+        "from": null,
+        "from_who": "雷军",
+        "length": 30,
+        "type": "i",
+        "uuid": "b4f5c650ed12c08ff6d61684199b3067"
     }
 ]
