@@ -28,5 +28,35 @@
         "length": 30,
         "type": "i",
         "uuid": "b4f5c650ed12c08ff6d61684199b3067"
+    },
+    {
+        "content": "明智的放弃胜过盲目的执着。",
+        "created_at": "1644824172",
+        "creator": "异想之旅",
+        "from": null,
+        "from_who": "林语堂",
+        "length": 13,
+        "type": "i",
+        "uuid": "69642674914013095cd772e68af9c67c"
+    },
+    {
+        "content": "无论你遇见谁，他都是你生命中该出现的人，绝非偶然。",
+        "created_at": "1645531724",
+        "creator": "异想之旅",
+        "from": null,
+        "from_who": "释迦牟尼",
+        "length": 25,
+        "type": "i",
+        "uuid": "cbeb87c88c06c030cc94cfc1e3f0c12c"
+    },
+    {
+        "content": "一定会有什么事比上课更重要，比如楼外的蒹葭，或者今晚的月亮。",
+        "created_at": "1645531817",
+        "creator": "异想之旅",
+        "from": "江苏大学文学院",
+        "from_who": "周衡老师",
+        "length": 30,
+        "type": "i",
+        "uuid": "a433cf1c8f311685b836e78101758bc2"
     }
 ]

@@ -4,7 +4,7 @@
         "created_at": "1644055741",
         "creator": "danny",
         "from": null,
-        "from_who": "黛丽·赫本",
+        "from_who": "奥黛丽·赫本",
         "length": 19,
         "type": "b",
         "uuid": "db4e0c399e64947f364ce4e877c80202"
@@ -30,7 +30,7 @@
         "uuid": "bc56c650ddb37c0ff0b318a21a6350ed"
     },
     {
-        "content": "我发现世界真的很大，没有刻意的去安排，就真的不会再见了。\t",
+        "content": "我发现世界真的很大，没有刻意的去安排，就真的不会再见了。",
         "created_at": "1644076999",
         "creator": "异想之旅",
         "from": "QQ音乐",
@@ -50,7 +50,7 @@
         "uuid": "128a712d86f836d0e2c3b9d6d68950bf"
     },
     {
-        "content": "教堂的白鸽会亲吻深渊里的乌鸦吗.",
+        "content": "教堂的白鸽会亲吻深渊里的乌鸦吗。",
         "created_at": "1644077317",
         "creator": "异想之旅",
         "from": "QQ音乐",
@@ -168,5 +168,175 @@
         "length": 22,
         "type": "b",
         "uuid": "c7fafdf83d424b6d84082d2d773eee88"
+    },
+    {
+        "content": "愿你度过青春、经历离别，还能不被这个世界所迷惑，成为更好的自己，初心莫负。",
+        "created_at": "1644540303",
+        "creator": "异想之旅",
+        "from": "好句摘抄网",
+        "from_who": null,
+        "length": 37,
+        "type": "b",
+        "uuid": "31320c0fcb21718e484147b85145de18"
+    },
+    {
+        "content": "大风可以吹起一片白纸，却无法吹走一只蝴蝶，因为生命的力量在于不顺从。",
+        "created_at": "1644682460",
+        "creator": "异想之旅",
+        "from": "网络",
+        "from_who": null,
+        "length": 34,
+        "type": "b",
+        "uuid": "1b7592570b7bb11529866b18b074e531"
+    },
+    {
+        "content": "这个夜晚我决定，重新看这个满是光线的世界，让我眼泪中的点滴是流光溢彩的灯火。",
+        "created_at": "1644682528",
+        "creator": "异想之旅",
+        "from": "知乎",
+        "from_who": "惊鸿",
+        "length": 38,
+        "type": "b",
+        "uuid": "a29ea7601adf64eb0212c207ffb2527d"
+    },
+    {
+        "content": "你面朝太阳，即使闭着眼也能看见光。",
+        "created_at": "1644822296",
+        "creator": "异想之旅",
+        "from": "网络",
+        "from_who": null,
+        "length": 17,
+        "type": "b",
+        "uuid": "6c443ef48478aac7d21aa20014ab8390"
+    },
+    {
+        "content": "一定要站在你所热爱的世界里闪闪发光。",
+        "created_at": "1644822515",
+        "creator": "异想之旅",
+        "from": "网络",
+        "from_who": null,
+        "length": 18,
+        "type": "b",
+        "uuid": "8606afa257235f80b7b2cfae99098c40"
+    },
+    {
+        "content": "他们想把我埋了，却不知道我是一颗种子。",
+        "created_at": "1644822984",
+        "creator": "异想之旅",
+        "from": "网络",
+        "from_who": null,
+        "length": 19,
+        "type": "b",
+        "uuid": "c4cb6291e3d15c0ef5db1117445d129d"
+    },
+    {
+        "content": "羡慕别人的天空简直没道理，因为你是一座宇宙。",
+        "created_at": "1644823006",
+        "creator": "异想之旅",
+        "from": "网络",
+        "from_who": null,
+        "length": 22,
+        "type": "b",
+        "uuid": "166d11b485571cca22aa6a77150bf459"
+    },
+    {
+        "content": "何惧车遥马慢，我们来日方长。",
+        "created_at": "1644823111",
+        "creator": "异想之旅",
+        "from": "网络",
+        "from_who": null,
+        "length": 14,
+        "type": "b",
+        "uuid": "1c8e57fd776e4af3fd39d1a1adf169f0"
+    },
+    {
+        "content": "我们安慰别人时，头头是道；安慰自己时，只剩苦笑。",
+        "created_at": "1644823200",
+        "creator": "异想之旅",
+        "from": "网络",
+        "from_who": null,
+        "length": 24,
+        "type": "b",
+        "uuid": "480b8e86fb85fef85cd9bdc7e13fa235"
+    },
+    {
+        "content": "但愿殊途同归，我能与你讲讲来时的路。",
+        "created_at": "1644823231",
+        "creator": "异想之旅",
+        "from": "网络",
+        "from_who": null,
+        "length": 18,
+        "type": "b",
+        "uuid": "66b051c46a36d85dcd29f7b869e32ca7"
+    },
+    {
+        "content": "去见想见的人，去做想做的事，趁阳光正好、微风不噪，趁你未老。",
+        "created_at": "1644823287",
+        "creator": "异想之旅",
+        "from": "网络",
+        "from_who": null,
+        "length": 30,
+        "type": "b",
+        "uuid": "97906c52e0b67941742aac92bc1080ec"
+    },
+    {
+        "content": "所有人都祝你快乐，我只愿你，历遍山河仍觉得人间值得。",
+        "created_at": "1644823488",
+        "creator": "异想之旅",
+        "from": "网络",
+        "from_who": null,
+        "length": 26,
+        "type": "b",
+        "uuid": "276b572d91ffd42cdb682407caa4563d"
+    },
+    {
+        "content": "想被秋天卷起，卷进温柔的风里，柔软的云里，还有橘子味的拥抱里。",
+        "created_at": "1644823731",
+        "creator": "异想之旅",
+        "from": "网络",
+        "from_who": null,
+        "length": 31,
+        "type": "b",
+        "uuid": "565863f614ff285818a2d5f0483352dc"
+    },
+    {
+        "content": "请成为永远疯狂、永远浪漫、永远清澈的存在。",
+        "created_at": "1644823764",
+        "creator": "异想之旅",
+        "from": "网络",
+        "from_who": null,
+        "length": 21,
+        "type": "b",
+        "uuid": "aa71f5fa5eef12977c4ae89106952374"
+    },
+    {
+        "content": "总有一阵风会吹过我再吹过你，总有一个瞬间我们之前的距离是零。",
+        "created_at": "1644824240",
+        "creator": "异想之旅",
+        "from": "网络",
+        "from_who": null,
+        "length": 30,
+        "type": "b",
+        "uuid": "1f04e3e7b4ba99b159a61ef3eb73b9e2"
+    },
+    {
+        "content": "可是月亮奔我而来的话，那还算什么月亮。我不要。",
+        "created_at": "1645531935",
+        "creator": "异想之旅",
+        "from": "网络",
+        "from_who": null,
+        "length": 23,
+        "type": "b",
+        "uuid": "e5dc749adf2b81f2e5ccece4b7edf392"
+    },
+    {
+        "content": "你说我会遇到更好的人，但其实你想遇到更好的人吧。",
+        "created_at": "1645532104",
+        "creator": "异想之旅",
+        "from": "网络",
+        "from_who": null,
+        "length": 24,
+        "type": "b",
+        "uuid": "60a672b81d71d65720cea78f4b188d69"
     }
 ]

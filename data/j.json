@@ -28,5 +28,25 @@
         "length": 6,
         "type": "j",
         "uuid": "b1a152657800698d4a8b95e02d4fad69"
+    },
+    {
+        "content": "期末考试不给老师露一手，他还真以为自己教得好。",
+        "created_at": "1644540633",
+        "creator": "异想之旅",
+        "from": "网络",
+        "from_who": null,
+        "length": 23,
+        "type": "j",
+        "uuid": "90f964350625a500b8df52984ab6e88f"
+    },
+    {
+        "content": "天下没有免费的午餐，所以我一般都睡到下午才起床。",
+        "created_at": "1645241155",
+        "creator": "异想之旅",
+        "from": "网络",
+        "from_who": null,
+        "length": 24,
+        "type": "j",
+        "uuid": "1f057c2b7aaa06e3bc569191c661188a"
     }
 ]

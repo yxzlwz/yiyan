@@ -58,5 +58,35 @@
         "length": 24,
         "type": "g",
         "uuid": "ccea4496ff5376488050bebc91daf8b8"
+    },
+    {
+        "content": "杀死自杀的人的，是他的过去还是未来？",
+        "created_at": "1644567117",
+        "creator": "异想之旅",
+        "from": "葭樱",
+        "from_who": null,
+        "length": 18,
+        "type": "g",
+        "uuid": "c194015491a8c22082ff13e571a6e1e0"
+    },
+    {
+        "content": "大概不会被忘却，大概很难再记起。",
+        "created_at": "1644822806",
+        "creator": "Hannah",
+        "from": "爱人错过",
+        "from_who": "河医泫",
+        "length": 16,
+        "type": "g",
+        "uuid": "8293c8c3cd6f25e6ff9f0d28b809cd54"
+    },
+    {
+        "content": "我们终将学着冷静与无聊。",
+        "created_at": "1644822858",
+        "creator": "Hannah",
+        "from": "爱人错过",
+        "from_who": "河医泫",
+        "length": 12,
+        "type": "g",
+        "uuid": "2cae47a4381cfe2f5a4d8895a8ab0021"
     }
 ]
